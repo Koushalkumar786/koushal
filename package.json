@@ -1,4 +1,5 @@
 {
+  "homepage": "https://koushalkumar786.github.io/portfolio.github.io/Portfolio.github.io-main",
   "name": "portfolio.react",
   "private": true,
   "version": "0.0.0",
@@ -7,20 +8,22 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.12.1",
-    "framer-motion": "^10.18.0",
+    "@emailjs/browser": "^3.11.0",
+    "framer-motion": "^10.12.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.21.3",
+    "react-router-dom": "^6.14.1",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0"
   },
   "devDependencies": {
-    "@react-three/drei": "^9.96.1",
-    "@react-three/fiber": "^8.15.14",
+    "@react-three/drei": "^9.78.1",
+    "@react-three/fiber": "^8.13.4",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@vitejs/plugin-react": "^4.0.1",
